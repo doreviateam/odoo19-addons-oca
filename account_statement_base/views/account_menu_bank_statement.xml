@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Odoo Community n'affiche pas par défaut d'entrée de menu pour les relevés :
+  l'accès passe souvent par le tableau de bord des journaux. Ces entrées rendent
+  les actions standard visibles sous Comptabilité > Transactions.
+-->
+<odoo>
+    <menuitem
+        id="menu_action_bank_statement_tree"
+        name="Bank Statements"
+        parent="account.account_transactions_menu"
+        action="account.action_bank_statement_tree"
+        sequence="15"
+        groups="account.group_account_readonly"
+    />
+    <menuitem
+        id="menu_action_cash_register_tree"
+        name="Cash Registers"
+        parent="account.account_transactions_menu"
+        action="account.action_view_bank_statement_tree"
+        sequence="16"
+        groups="account.group_account_readonly"
+    />
+</odoo>
