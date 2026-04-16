@@ -1,5 +1,7 @@
 # odoo19-addons-oca
 
+**Dépôt GitHub** : [doreviateam/odoo19-addons-oca](https://github.com/doreviateam/odoo19-addons-oca)
+
 ## Objet
 
 Ce répertoire accueille les **modules OCA additionnels** retenus pour le sandbox
@@ -39,8 +41,8 @@ Le principe à préserver est simple :
 
 ## Frontière
 
-- `odoo19-addons-dorevia/` : modules Dorevia reconstruits et versionnés pour la chaîne locale
-- `odoo19-addons-oca/` : modules OCA externes retenus pour l'instance Odoo locale
+- `odoo19-addons-dorevia/` : modules Dorevia reconstruits et versionnés pour la chaîne locale — [dépôt GitHub](https://github.com/doreviateam/odoo19-addons-dorevia)
+- `odoo19-addons-oca/` : modules OCA externes retenus pour l'instance Odoo locale (ce dépôt)
 
 ## Source
 
