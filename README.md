@@ -38,6 +38,9 @@ Le principe à préserver est simple :
   - `membership_extension` — extension de la gestion des adhésions (base **18.0** upstream, portée localement pour **19.0**)
 - **Contacts / identité** (dépôt [OCA/partner-contact](https://github.com/OCA/partner-contact), branche **19.0**) :
   - `partner_firstname` — prénom et nom séparés sur les partenaires personnes (AGPL-3) ; dépend uniquement de `base_setup`
+- **Packs produit (kits)** (dépôt [OCA/product-pack](https://github.com/OCA/product-pack)) :
+  - `product_pack` — noyau **pack** / composition de produits (copie **branche 19.0** upstream, `installable: True`)
+  - `sale_product_pack`, `purchase_product_pack`, `stock_product_pack`, `sale_stock_product_pack` — extensions vente / achat / stock (copie **branche 18.0** upstream au moment de l’import ; `__manifest__.py` en **19.0.1.0.0**, **`installable: False`** jusqu’au port fonctionnel Odoo 19 ; `stock_product_pack` : `auto_install` désactivé tant que le module n’est pas installable)
 
 ## Frontière
 
@@ -78,3 +81,10 @@ complément).
 Le module **`partner_firstname`** provient du dépôt
 [OCA/partner-contact](https://github.com/OCA/partner-contact) (branche **19.0**) ;
 seul ce dossier module est copié ici (pas l’intégralité du dépôt).
+
+Les modules **product_pack** et extensions **sale_** / **purchase_** / **stock_** /
+**sale_stock_product_pack** proviennent du dépôt [OCA/product-pack](https://github.com/OCA/product-pack) :
+**`product_pack`** est aligné sur la branche **19.0** officielle ; les quatre autres
+dossiers sont importés depuis la branche **18.0** (absence de versions prêtes sur
+**19.0** upstream au moment de l’import) et restent **non installables** jusqu’à
+adaptation du code et des dépendances pour Odoo 19.
