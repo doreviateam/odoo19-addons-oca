@@ -30,6 +30,11 @@ Le principe à préserver est simple :
 - `account_statement_base`
 - `account_reconcile_model_oca`
 - `account_reconcile_oca`
+- **Import de relevés bancaires** (dépôt [OCA/bank-statement-import](https://github.com/OCA/bank-statement-import)) :
+  - `account_statement_import_base` — base technique d’import (branche **19.0**)
+  - `account_statement_import_file` — wizard « Importer un relevé » (successeur de `account_statement_import`)
+  - `account_statement_import_sheet_file` — import **CSV / TXT / XLSX** (branche **19.0**)
+  - `account_statement_import_ofx` — import **OFX** (copie **branche 18.0** upstream, manifest `19.0.1.0.0` ; module absent de la branche **19.0** upstream au moment de l’import)
 - **Confort comptabilité CE** (dépôt [OCA/account-financial-tools](https://github.com/OCA/account-financial-tools), branche **19.0**) :
   - `account_usability` — menus comptables masqués en CE, renommage « Facturation » → « Comptabilité », groupe « Show Full Accounting Features », option Anglo-Saxon
 - **DMS (OCA)** — confort métier documents, indépendant de la chaîne Vault :
@@ -62,6 +67,14 @@ Le lot minimal de réconciliation bancaire OCA a aussi été ajouté pour Odoo 1
 
 Il constitue le paquet minimal retenu pour ouvrir le front de réconciliation
 bancaire sans embarquer d'extensions annexes prématurées.
+
+Les modules **bank-statement-import** ci-dessus proviennent du dépôt
+[OCA/bank-statement-import](https://github.com/OCA/bank-statement-import) :
+**`account_statement_import_base`**, **`account_statement_import_file`** et
+**`account_statement_import_sheet_file`** sont alignés sur la branche **19.0** ;
+**`account_statement_import_ofx`** est importé depuis la branche **18.0** (absent
+de **19.0** upstream au moment de l’intégration). Dépendance Python **ofxparse**
+(déjà présente dans l’image Docker du sandbox).
 
 Le module **`account_usability`** provient du dépôt
 [OCA/account-financial-tools](https://github.com/OCA/account-financial-tools),
