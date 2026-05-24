@@ -30,6 +30,8 @@ Le principe à préserver est simple :
 - `account_statement_base`
 - `account_reconcile_model_oca`
 - `account_reconcile_oca`
+- **Confort comptabilité CE** (dépôt [OCA/account-financial-tools](https://github.com/OCA/account-financial-tools), branche **19.0**) :
+  - `account_usability` — menus comptables masqués en CE, renommage « Facturation » → « Comptabilité », groupe « Show Full Accounting Features », option Anglo-Saxon
 - **DMS (OCA)** — confort métier documents, indépendant de la chaîne Vault :
   - `dms` (noyau)
   - `dms_field`, `dms_auto_classification`, `dms_field_auto_classification`, `dms_user_role`
@@ -60,6 +62,10 @@ Le lot minimal de réconciliation bancaire OCA a aussi été ajouté pour Odoo 1
 
 Il constitue le paquet minimal retenu pour ouvrir le front de réconciliation
 bancaire sans embarquer d'extensions annexes prématurées.
+
+Le module **`account_usability`** provient du dépôt
+[OCA/account-financial-tools](https://github.com/OCA/account-financial-tools),
+branche **19.0** (copie directe upstream, manifest `19.0.1.0.0`).
 
 Les modules **credit-control** ci-dessus proviennent du dépôt
 [OCA/credit-control](https://github.com/OCA/credit-control).
