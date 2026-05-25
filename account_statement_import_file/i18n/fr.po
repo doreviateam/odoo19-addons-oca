@@ -43,7 +43,7 @@ msgstr "1 transaction a déjà été importée et a été ignorée."
 #. module: account_statement_import_file
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.journal_dashboard_view_inherit
 msgid "<span>Import (OCA)</span>"
-msgstr "<span>Import (OCA)</span>"
+msgstr "<span>Importer un relevé</span>"
 
 #. module: account_statement_import_file
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.account_statement_import_form
@@ -89,7 +89,7 @@ msgstr "ID"
 #. odoo-python
 #: code:addons/account_statement_import_file/models/account_journal.py:0
 msgid "Import (OCA) (%s)"
-msgstr ""
+msgstr "Importer un relevé (%s)"
 
 #. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
@@ -109,7 +109,7 @@ msgstr "Import d'un relevé"
 #. module: account_statement_import_file
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.journal_dashboard_view_inherit
 msgid "Import Statement (OCA)"
-msgstr "Import de relevé (OCA)"
+msgstr "Importer un relevé"
 
 #. module: account_statement_import_file
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file.account_statement_import_form
